@@ -1,0 +1,14 @@
+# minimum versions, not exact pins, so pip can pick builds that exist for new
+# Pythons (pydantic 2.7 had no ready-made package for Python 3.14)
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0.36
+pydantic[email]>=2.11
+python-jose[cryptography]>=3.3
+bcrypt>=4.1
+python-multipart>=0.0.9
+httpx>=0.27
+lightgbm>=4.0
+scikit-learn>=1.3     # lightgbm needs it for LGBMRegressor
+pandas>=2.0
+numpy>=1.24
